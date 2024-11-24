@@ -5,17 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>VIVAWELL</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!-- Ajouter Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Section de l'entête -->
+    <!-- En-tête avec navigation -->
     <header>
         <img src="./vivawell logo2.png" alt="Logo de l'organisation" class="logo">
-        <h1>Welcome to VIVAWELL</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#map">Location</a></li>
+                                <li>  <button id="theme-toggle" aria-label="Toggle dark mode">
+                <i id="theme-icon" class="fas fa-sun"></i> <!-- Icône initiale (clair) -->
+            </button></li>
+
+            </ul>
+          
+        </nav>
     </header>
 
     <!-- Section de présentation -->
-    <section class="about">
+    <section id="about" class="about">
         <h2>Who Are We?</h2>
         <p>
             <strong>VIVAWELL</strong> is a non-governmental organization (NGO) dedicated to promoting health and well-being in line with the United Nations' Sustainable Development Goal (SDG) for Good Health and Well-being.
@@ -29,35 +43,40 @@
             <li><strong>Mental Health Support:</strong> Raising awareness and offering essential services.</li>
             <li><strong>Encouraging Healthy Lifestyles:</strong> Promoting active living and balanced nutrition.</li>
         </ul>
-        <h3>Our Team:</h3>
-        <ul>
-            <li><strong>Aymen Ghozzi</strong> – CEO, leading the organization.</li>
-            <li><strong>Yazid Mrouki</strong> – Fundraiser, securing project funding.</li>
-            <li><strong>Kacem Benbrahim</strong> – Volunteer Coordinator, managing volunteers.</li>
-            <li><strong>Fedi Boussaid</strong> – Communications Officer, spreading our message.</li>
-            <li><strong>Rania Ben Ali</strong> – Program Manager, organizing and executing our initiatives.</li>
-        </ul>
-        <p>
-            We value <strong>equity</strong>, <strong>innovation</strong>, <strong>collaboration</strong>, and <strong>respect</strong> in all that we do, striving to make a lasting impact on the communities we serve.
-        </p>
     </section>
 
     <!-- Section Contact -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2>Contact Us</h2>
         <ul>
             <li><strong>Phone:</strong> +216 12 345 678</li>
             <li><strong>Email:</strong> contact@vivawell.com</li>
-            <li><strong>Address:</strong> 123, Tunis, Tunisia</li>
+            <li><strong>Address:</strong> ZI Choutrana 2 - Pôle Technologique Al "Block M" Esprit, Ariana</li>
         </ul>
         <a href="mailto:contact@vivawell.com" class="contact-button">Send an Email</a>
     </section>
 
     <!-- Section de localisation -->
-    <section class="map">
+    <section id="map" class="map">
         <h2>Our Location</h2>
-        <iframe src="https://www.google.com/maps/embed?..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.517135627982!2d10.2115553!3d36.8677359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd35704ef09aa3%3A0xa4b47fd2f198741f!2sEsprit!5e0!3m2!1sen!2stn!4v1697801294378!5m2!1sen!2stn" 
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
     </section>
+
+    <!-- Bouton pour remonter -->
+    <button id="scrollTopButton" title="Go to top">⬆</button>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>&copy; 2024 VIVAWELL. All Rights Reserved.</p>
+        <p>Follow us: 
+            <a href="https://facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://instagram.com" target="_blank">Instagram</a>
+        </p>
+    </footer>
 
     <script src="app.js"></script>
 </body>
