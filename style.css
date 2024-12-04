@@ -195,3 +195,18 @@ body.dark-mode #scrollTopButton {
 body.dark-mode #scrollTopButton:hover {
   background-color: #b7b7b7;
 }
+
+.impact .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.impact .stats div {
+    text-align: center;
+}
+
+.impact h3 {
+    font-size: 2em;
+    color: #5e8b7e;
+}
